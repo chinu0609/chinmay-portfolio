@@ -144,16 +144,16 @@ const Index = () => {
             <CardContent className="p-8">
               <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
                 <p>
-                  <span className="text-cyan-400 font-mono">></span> Curiosity-driven AI Engineer passionate about building intelligent systems that push the boundaries of what's possible.
+                  <span className="text-cyan-400 font-mono">&gt;</span> Curiosity-driven AI Engineer passionate about building intelligent systems that push the boundaries of what's possible.
                 </p>
                 <p>
-                  <span className="text-cyan-400 font-mono">></span> I specialize in agentic AI, large language models, and computer vision, focusing on real-world applications that solve complex problems.
+                  <span className="text-cyan-400 font-mono">&gt;</span> I specialize in agentic AI, large language models, and computer vision, focusing on real-world applications that solve complex problems.
                 </p>
                 <p>
-                  <span className="text-cyan-400 font-mono">></span> Open-source advocate who believes in collaborative innovation. My work spans contract validation systems, RAG implementations, and autonomous AI agents.
+                  <span className="text-cyan-400 font-mono">&gt;</span> Open-source advocate who believes in collaborative innovation. My work spans contract validation systems, RAG implementations, and autonomous AI agents.
                 </p>
                 <p>
-                  <span className="text-cyan-400 font-mono">></span> When I'm not coding, you'll find me exploring the latest research papers, contributing to open-source projects, or experimenting with cutting-edge AI architectures.
+                  <span className="text-cyan-400 font-mono">&gt;</span> When I'm not coding, you'll find me exploring the latest research papers, contributing to open-source projects, or experimenting with cutting-edge AI architectures.
                 </p>
               </div>
             </CardContent>
