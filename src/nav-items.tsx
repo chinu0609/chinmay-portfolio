@@ -9,7 +9,7 @@ export const navItems = [
     page: <Index />,
   },
   {
-    title: "404",
+    title: "404", 
     to: "*",
     page: <NotFound />,
   },
