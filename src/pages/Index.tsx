@@ -186,18 +186,19 @@ const Index = () => {
                     ))}
                   </div>
                   <div className="flex gap-4">
-					<a href = {project.github} target="_blank" rel="noopener noreferrer">
                     <Button size="sm" variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 font-mono">
-                      <Github className="h-4 w-4 mr-2" />
+                      
+					<a href = {project.github} target="_blank" rel="noopener noreferrer">
+						<Github className="h-4 w-4 mr-2" />
                       Code
-                    </Button>
 					</a>
-					<a href = {project.demo} target="_blank" rel="noopener noreferrer">
+                    </Button>
                     <Button size="sm" className="bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 font-mono">
-                      <ArrowRight className="h-4 w-4 mr-2" />
+					<a href = {project.demo} target="_blank" rel="noopener noreferrer">
+						<ArrowRight className="h-4 w-4 mr-2" />
                       Demo
-                    </Button>
 					</a>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
