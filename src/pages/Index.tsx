@@ -188,13 +188,11 @@ const Index = () => {
                     <Button size="sm" variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 font-mono">
                       
 					<a href = {project.github} target="_blank" rel="noopener noreferrer">
-						<Github className="h-4 w-4 mr-2" />
                       Code
 					</a>
                     </Button>
                     <Button size="sm" className="bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 font-mono">
 					<a href = {project.demo} target="_blank" rel="noopener noreferrer">
-						<ArrowRight className="h-4 w-4 mr-2" />
                       Demo
 					</a>
                     </Button>
