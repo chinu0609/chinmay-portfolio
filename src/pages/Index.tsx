@@ -245,7 +245,7 @@ const Index = () => {
               {
                 title: "Deep Learning Based Automated Question Generation for Examination System",
                 date: "2025-02-12",
-                preview: "This research presents a novel approach to automating the generation of expert-level questions on specific topics, by leveraging advanced large language models...."
+                preview: "This research presents a novel approach to automating the generation of expert-level questions on specific topics, by leveraging advanced large language models....",
 				link:"https://ieeexplore.ieee.org/document/10870863"
               },
             ].map((post, index) => (
