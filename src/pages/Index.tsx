@@ -247,19 +247,19 @@ const Index = () => {
                 date: "2025-02-12",
                 preview: "This research presents a novel approach to automating the generation of expert-level questions on specific topics, by leveraging advanced large language models....",
 				link:"https://ieeexplore.ieee.org/document/10870863"
-              },
+              }
             ].map((post, index) => (
-				<a href= {post.link}, target="_blank", rel="noopener noreferrer"> 
-				<Card key={index} className="bg-slate-900/50 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 cursor-pointer">
-                <CardContent className="p-6">
+				<Card asChild key={index} className="bg-slate-900/50 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 cursor-pointer">
+			    <a href={post.link} target="_blank" rel="noopener noreferrer">	
+				<CardContent className="p-6">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-cyan-400">{post.title}</h3>
+                    <h3 className="text-xl font-bold text-cyan-400" >{post.title}</h3>
                     <span className="text-slate-500 font-mono text-sm">{post.date}</span>
                   </div>
                   <p className="text-slate-300">{post.preview}</p>
                 </CardContent>
+				</a>
               </Card>
-			  </a>
             ))}
           </div>
         </div>
@@ -277,19 +277,19 @@ const Index = () => {
                 Ready to build something extraordinary together?
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-				<a href="mailto:chinmayhbhosale02@gmail.com">
+				<a href="mailto:chinmayhbhosale02@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 text-white px-8 py-3 text-lg font-mono">
                   <Mail className="mr-2 h-5 w-5" />
                   Email Me
                 </Button>
 				</a>
-				<a href="https://github.com/chinu0609">
+				<a href="https://github.com/chinu0609" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-8 py-3 text-lg font-mono">
                   <Github className="mr-2 h-5 w-5" />
                   GitHub
                 </Button>
 				</a>
-				<a href="https://www.linkedin.com/in/chinmay-bhosale-31340231a/">
+				<a href="https://www.linkedin.com/in/chinmay-bhosale-31340231a/" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10 px-8 py-3 text-lg font-mono">
                   <User className="mr-2 h-5 w-5" />
                   LinkedIn
