@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
   ].filter(Boolean),
-  base: process.env.NODE_ENV === 'production' ? '/chinmay-portfolio/' : '/',
+  base: mode === 'production' ? '/chinmay-portfolio/' : '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
