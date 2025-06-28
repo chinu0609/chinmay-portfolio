@@ -107,7 +107,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="font-mono text-xl md:text-2xl text-cyan-400 mb-8 h-8">
+          <div className="font-mono text-xl md:text-2xl text-cyan-400 mb-8 min-h-[2.5rem] sm:min-h-[3rem]">
             {currentText}
             <span className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity`}>|</span>
           </div>
