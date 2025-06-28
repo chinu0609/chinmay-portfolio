@@ -246,9 +246,11 @@ const Index = () => {
                 title: "Deep Learning Based Automated Question Generation for Examination System",
                 date: "2025-02-12",
                 preview: "This research presents a novel approach to automating the generation of expert-level questions on specific topics, by leveraging advanced large language models...."
+				link:"https://ieeexplore.ieee.org/document/10870863"
               },
             ].map((post, index) => (
-              <Card key={index} className="bg-slate-900/50 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 cursor-pointer">
+				<a href= "https://ieeexplore.ieee.org/document/10870863", target="_blank", rel="noopener noreferrer"> 
+				<Card key={index} className="bg-slate-900/50 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 cursor-pointer">
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-bold text-cyan-400">{post.title}</h3>
@@ -257,6 +259,7 @@ const Index = () => {
                   <p className="text-slate-300">{post.preview}</p>
                 </CardContent>
               </Card>
+			  </a>
             ))}
           </div>
         </div>
