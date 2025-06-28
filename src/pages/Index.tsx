@@ -243,20 +243,10 @@ const Index = () => {
           <div className="space-y-6">
             {[
               {
-                title: "The Future of Agentic AI",
-                date: "2024-03-15",
-                preview: "Exploring how autonomous agents will reshape human-AI collaboration..."
+                title: "Deep Learning Based Automated Question Generation for Examination System",
+                date: "2025-02-12",
+                preview: "This research presents a novel approach to automating the generation of expert-level questions on specific topics, by leveraging advanced large language models...."
               },
-              {
-                title: "RAG vs Fine-tuning: A Practical Guide",
-                date: "2024-03-08", 
-                preview: "When to use retrieval-augmented generation and when to fine-tune your models..."
-              },
-              {
-                title: "Building Production-Ready Computer Vision",
-                date: "2024-02-28",
-                preview: "Lessons learned from deploying CV models at scale..."
-              }
             ].map((post, index) => (
               <Card key={index} className="bg-slate-900/50 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 cursor-pointer">
                 <CardContent className="p-6">
@@ -296,7 +286,7 @@ const Index = () => {
                   GitHub
                 </Button>
 				</a>
-				<a href="https://www.linkedin.com/in/chinmayhbhosale02/">
+				<a href="https://www.linkedin.com/in/chinmay-bhosale-31340231a/">
                 <Button variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10 px-8 py-3 text-lg font-mono">
                   <User className="mr-2 h-5 w-5" />
                   LinkedIn
