@@ -249,7 +249,7 @@ const Index = () => {
 				link:"https://ieeexplore.ieee.org/document/10870863"
               },
             ].map((post, index) => (
-				<a href= "https://ieeexplore.ieee.org/document/10870863", target="_blank", rel="noopener noreferrer"> 
+				<a href= {post.link}, target="_blank", rel="noopener noreferrer"> 
 				<Card key={index} className="bg-slate-900/50 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 cursor-pointer">
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-2">
