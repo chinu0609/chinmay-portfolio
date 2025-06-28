@@ -110,10 +110,11 @@ const Index = () => {
             </div>
           </div>
           
-		<div className="font-mono text-base sm:text-xl md:text-2xl text-cyan-400 mb-8 min-h-[2.5rem] sm:min-h-[2.75rem]">
-		  {currentText}
-		  <span className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity`}>|</span>
-		</div>
+          <div className="font-mono text-xl md:text-2xl text-cyan-400 mb-8 h-8">
+            {currentText}
+            <span className={${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity}>|</span>
+          </div>
+          
           
           <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed px-2">
             I build practical AI systems that learn, reason, and act.
