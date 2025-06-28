@@ -291,12 +291,6 @@ const Index = () => {
 				</a>
               </div>
               <div className="mt-8">
-			  {/* <Button variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-6 py-2 font-mono">
-                // <Button variant="outline" className="border-green-500 text-green-400 hover:bg-green-500/10 px-6 py-2 font-mono">
-                //   <Book className="mr-2 h-4 w-4" />
-                //   Download Resume
-                // </Button>
-				//*/}
               </div>
             </CardContent>
           </Card>
