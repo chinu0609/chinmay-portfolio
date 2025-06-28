@@ -30,40 +30,41 @@ const Index = () => {
 
   const projects = [
     {
-      title: "Agentic Contract Validator",
-      description: "Multi-agent system for automated legal document analysis using LLMs and knowledge graphs. Reduces manual review time by 85%.",
-      tech: ["Python", "LangChain", "GPT-4", "Neo4j", "FastAPI"],
-      github: "#",
-      demo: "#"
+	  title: "Pseudo Talk",
+	  description: "Simulates conversations between characters using Retrieval-Augmented Generation (RAG). Explores how personality-driven knowledge bases affect dynamic dialogue generation.",
+	  tech: ["Python", "LlamaIndex", "Ollama", "bge-base-en", "LangChain"],
+	  github: "https://github.com/chinu0609/Pseudo_Talk",
+	  demo: "./assets/preview.mp4"
     },
     {
-      title: "RAG-Enhanced Research Assistant",
-      description: "Intelligent research assistant that processes scientific papers and generates contextual insights using vector embeddings and retrieval-augmented generation.",
-      tech: ["Python", "ChromaDB", "Transformers", "Streamlit", "OpenAI"],
-      github: "#",
-      demo: "#"
+	  title: "Business Contract Validator",
+	  description: "Automates validation of business contracts against legal standards using classification models, vector indexing, and LLMs. Includes clause-level analysis, PDF annotation, and evaluation metrics.",
+	  tech: ["Python", "TensorFlow", "LlamaIndex", "HuggingFace", "Gemini 2.0-Flash", "Streamlit", "LangChain", "RAGAS"],
+	  github: "https://github.com/OmNagvekar/Business_Contract_Validation",
+	  demo: "https://docs.google.com/presentation/d/1oNmM9cjXkfXuyB23qdgomxTB6Q7wtNfU/edit?usp=drivesdk"
     },
     {
-      title: "Computer Vision Pipeline",
-      description: "Real-time object detection and tracking system for autonomous systems with custom YOLO implementation and edge deployment.",
-      tech: ["PyTorch", "OpenCV", "CUDA", "TensorRT", "Docker"],
-      github: "#",
-      demo: "#"
+	  title: "Garbage Detection & Analysis API",
+	  description: "FastAPI-based system for detecting garbage intensity, types, and littering from images and videos using Florence-2, DeepSort, and custom PyTorch models. Showcased at SIH 2024 Grand Finale.",
+	  tech: ["Python", "FastAPI", "Florence-2", "PyTorch", "DeepSort", "ThreadPoolExecutor", "CUDA"],
+	  github: "https://github.com/OmNagvekar/AI_Predictions_API",
+	  demo: "https://github.com/OmNagvekar/AI_Predictions_API"
     },
-    {
-      title: "Multi-Modal AI Agent",
-      description: "Conversational AI that processes text, images, and audio inputs to provide comprehensive responses using ensemble learning.",
-      tech: ["Python", "Whisper", "CLIP", "LangChain", "Redis"],
-      github: "#",
-      demo: "#"
-    }
+	{
+	  title: "Text Sentiment Classifier (USE)",
+	  description: "Classifies text as positive, negative, or neutral using Universal Sentence Encoder (USE) for embeddings and a custom neural network architecture.",
+	  tech: ["Python", "TensorFlow", "Universal Sentence Encoder", "Neural Networks"],
+	  github: "https://github.com/chinu0609/Text_Classification_USE.git",
+	  demo: "https://github.com/chinu0609/Text_Classification_USE.git"
+	}
   ];
 
   const skills = {
-    "Languages": ["Python", "JavaScript", "TypeScript", "C++", "Rust", "SQL"],
-    "AI/ML": ["PyTorch", "TensorFlow", "Transformers", "LangChain", "OpenCV", "Scikit-learn"],
-    "Tools": ["Docker", "Kubernetes", "Git", "AWS", "GCP", "MongoDB", "PostgreSQL"],
-    "Domains": ["Computer Vision", "NLP", "Agentic AI", "MLOps", "Research", "System Design"]
+    "Languages": ["Python", "C++", "SQL"],
+    "AI/ML": ["PyTorch", "TensorFlow", "Transformers", "LangChain", "OpenCV", "Scikit-learn","Llamaindex","Langgraph","MCP"],
+	"API/Web":["FastAPI","Streamlit","Flask","Gradio"],
+    "Tools": ["Docker", "Git", "AWS", "MongoDB","Unix Shell"],
+    "Domains": ["Computer Vision", "NLP", "Agentic AI","Research", "System Design"]
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -278,18 +279,24 @@ const Index = () => {
                 Ready to build something extraordinary together?
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="mailto:chinmayhbhosale02@gmail.com">
                 <Button className="bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 text-white px-8 py-3 text-lg font-mono">
                   <Mail className="mr-2 h-5 w-5" />
                   Email Me
                 </Button>
+				</a>
+				<a href="https://github.com/chinu0609">
                 <Button variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-8 py-3 text-lg font-mono">
                   <Github className="mr-2 h-5 w-5" />
                   GitHub
                 </Button>
+				</a>
+				<a href="https://www.linkedin.com/in/chinmayhbhosale02/">
                 <Button variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10 px-8 py-3 text-lg font-mono">
                   <User className="mr-2 h-5 w-5" />
                   LinkedIn
                 </Button>
+				</a>
               </div>
               <div className="mt-8">
                 <Button variant="outline" className="border-green-500 text-green-400 hover:bg-green-500/10 px-6 py-2 font-mono">
