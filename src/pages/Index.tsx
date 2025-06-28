@@ -99,10 +99,10 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-cyan-500/10 opacity-30"></div>
         <div className="container mx-auto text-center relative z-10">
           <div className="mb-8">
-            <div className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            <div className="text-3xl sm:text-4xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent break-words">
               CHINMAY
             </div>
-            <div className="text-2xl md:text-4xl font-bold text-slate-300 mb-6">
+            <div className="text-xl sm:text-2xl md:text-4xl font-bold text-slate-300 break-words">
               BHOSALE
             </div>
           </div>
