@@ -28,8 +28,6 @@ const Index = () => {
     return () => clearInterval(cursorInterval);
   }, []);
 
-
-
   const projects = [
     {
 	  title: "Pseudo Talk",
@@ -101,22 +99,21 @@ const Index = () => {
       <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-cyan-500/10 opacity-30"></div>
         <div className="container mx-auto text-center relative z-10">
-          <div className="mb-8 px-2">
-            <div className="text-4xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent break-words">
+          <div className="mb-8">
+            <div className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               CHINMAY
             </div>
-            <div className="text-2xl md:text-5xl font-bold text-slate-300 mb-6 break-words">
+            <div className="text-3xl md:text-5xl font-bold text-slate-300 mb-6">
               BHOSALE
             </div>
           </div>
           
           <div className="font-mono text-xl md:text-2xl text-cyan-400 mb-8 h-8">
             {currentText}
-            <span className={${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity}>|</span>
+            <span className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity`}>|</span>
           </div>
           
-          
-          <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed px-2">
+          <p className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
             I build practical AI systems that learn, reason, and act.
           </p>
           
