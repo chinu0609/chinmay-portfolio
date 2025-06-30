@@ -33,7 +33,7 @@ const Index = () => {
 	  description: "Simulates conversations between characters using Retrieval-Augmented Generation (RAG). Explores how personality-driven knowledge bases affect dynamic dialogue generation.",
 	  tech: ["Python", "LlamaIndex", "Ollama", "bge-base-en", "LangChain"],
 	  github: "https://github.com/chinu0609/Pseudo_Talk",
-	  demo: "./assets/preview.mp4"
+	  demo: "https://github.com/chinu0609/Pseudo_Talk/assets/preview.mp4"
     },
     {
 	  title: "Business Contract Validator",
@@ -242,17 +242,20 @@ const Index = () => {
               {
                 title: "Deep Learning Based Automated Question Generation for Examination System",
                 date: "2025-02-12",
-                preview: "This research presents a novel approach to automating the generation of expert-level questions on specific topics, by leveraging advanced large language models...."
-              },
+                preview: "This research presents a novel approach to automating the generation of expert-level questions on specific topics, by leveraging advanced large language models....",
+				link:"https://ieeexplore.ieee.org/document/10870863"
+              }
             ].map((post, index) => (
-              <Card key={index} className="bg-slate-900/50 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 cursor-pointer">
-                <CardContent className="p-6">
+				<Card asChild key={index} className="bg-slate-900/50 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 cursor-pointer">
+			    <a href={post.link} target="_blank" rel="noopener noreferrer">	
+				<CardContent className="p-6">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-cyan-400">{post.title}</h3>
+                    <h3 className="text-xl font-bold text-cyan-400" >{post.title}</h3>
                     <span className="text-slate-500 font-mono text-sm">{post.date}</span>
                   </div>
                   <p className="text-slate-300">{post.preview}</p>
                 </CardContent>
+				</a>
               </Card>
             ))}
           </div>
