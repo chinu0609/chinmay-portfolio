@@ -246,8 +246,8 @@ const Index = () => {
 				link:"https://ieeexplore.ieee.org/document/10870863"
               }
             ].map((post, index) => (
+			<a href={post.link} target="_blank" rel="noopener noreferrer">
 				<Card asChild key={index} className="bg-slate-900/50 border-cyan-500/30 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 cursor-pointer">
-			    <a href={post.link} target="_blank" rel="noopener noreferrer">	
 				<CardContent className="p-6">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-bold text-cyan-400" >{post.title}</h3>
@@ -255,8 +255,8 @@ const Index = () => {
                   </div>
                   <p className="text-slate-300">{post.preview}</p>
                 </CardContent>
-				</a>
               </Card>
+			</a>
             ))}
           </div>
         </div>
