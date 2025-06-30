@@ -33,7 +33,7 @@ const Index = () => {
 	  description: "Simulates conversations between characters using Retrieval-Augmented Generation (RAG). Explores how personality-driven knowledge bases affect dynamic dialogue generation.",
 	  tech: ["Python", "LlamaIndex", "Ollama", "bge-base-en", "LangChain"],
 	  github: "https://github.com/chinu0609/Pseudo_Talk",
-	  demo: "https://github.com/chinu0609/Pseudo_Talk/assets/preview.mp4"
+	  demo: "https://github.com/chinu0609/Pseudo_Talk/blob/main/assets/preview.mp4"
     },
     {
 	  title: "Business Contract Validator",
