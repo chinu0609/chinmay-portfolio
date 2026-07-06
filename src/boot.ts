@@ -4,7 +4,7 @@ interface BootLine {
 }
 
 const BOOT_LINES: BootLine[] = [
-  { text: '[boot]  initializing chinmay.exe ...', cls: 'text' },
+  { text: '[boot]  initializing chinmay ...', cls: 'text' },
   { text: '[ok]    trait loaded: curiosity             (learning_rate: high, decay: none)', cls: 'teal' },
   { text: '[ok]    trait loaded: continuous-tuning     (gradient updates: daily, never converges)', cls: 'teal' },
   { text: '[ok]    trait loaded: pattern-recognition   (applies across logs, language, systems)', cls: 'teal' },
