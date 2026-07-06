@@ -10,12 +10,14 @@
 import type * as OrtType from 'onnxruntime-web';
 declare const ort: typeof OrtType;
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+
 let ortLoaded: Promise<void> | null = null;
 function loadOrtScript(): Promise<void> {
   if (ortLoaded) return ortLoaded;
   ortLoaded = new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = '/ort/ort.min.js';
+    script.src = `${ASSET_BASE}ort/ort.min.js`;
     script.onload = () => resolve();
     script.onerror = () => reject(new Error('failed to load onnxruntime-web'));
     document.head.appendChild(script);
@@ -36,10 +38,10 @@ let vocab: Vocab | null = null;
 async function loadModel(): Promise<void> {
   if (session) return;
   await loadOrtScript();
-  ort.env.wasm.wasmPaths = '/ort/';
-  const vocabRes = await fetch('/biogpt/vocab.json');
+  ort.env.wasm.wasmPaths = new URL(`${ASSET_BASE}ort/`, window.location.href).href;
+  const vocabRes = await fetch(`${ASSET_BASE}biogpt/vocab.json`);
   vocab = await vocabRes.json();
-  session = await ort.InferenceSession.create('/biogpt/model.onnx', {
+  session = await ort.InferenceSession.create(`${ASSET_BASE}biogpt/model.onnx`, {
     executionProviders: ['wasm'],
   });
 }
